@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      
+  </head>
+  <body>
+
+
+<script>
+ 
+// Javascript program for age calculator
+ 
+// function to calculate current age
+var year_born = prompt("Please enter your year of birth:", "Type here");
+var d = new Date();
+var n = d.getFullYear();
+function getAge(birthYear){
+	var currentDate = new Date();
+    var currentYear = currentDate.getFullYear();
+    age = currentYear - birthYear;
+    return age;
+}
+calculatedAge = getAge(year_born);
+alert("Hello, " + "you are " + calculatedAge + " years old!");
+</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>HTML Forms Example</title>
+    <style>
+        nav{
+        background:rgb(189, 188, 188);
+        overflow: auto;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li{
+        float: left;
+        
+    }
+    nav a{
+        width: 50px;
+        display: block;
+        color:black;
+        text-decoration: none;
+        text-align: center;
+        background:rgb(189, 188, 188);
+        font-size: 17px;
+        padding: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+   
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+         <li><a href="#">File</a></li>
+         <li><a href="#">Edit</a></li>
+         <li><a href="#">View</a></li>
+         <li><a href="#">History</a></li>
+         <li><a href="#">Bookmarks</a></li>
+         <li><a href="#">Tools</a></li>
+         <li><a href="#"> Help </a></li>
+         
+         </ul>
+        
+    </nav> 
+
+    <form action="">
+    <fieldset>
+        <legend>Academic information</legend>
+        <form action="">
+            <label for="">Degree</label>
+            <select name="" id="">
+                <option value="">Master of Business Addministration</option>
+            </select>
+            <br><br>
+            <label for="">Student ID</label>
+            <input type="text" name="" id=""><br><br>
+            <label for="">Class Attend</label>
+            <select name="" id="" size="3">
+                <option value="">Geography</option>
+                <option value="">Mathematic</option>
+                <option value="">English</option>
+            </select><br><br>
+        
+    </fieldset>
+    <fieldset>
+        <legend>Personal Details</legend>
+        <label for="">First name</label>
+        <input type="text">
+        <br><br>
+        <label for="">Last name</label>
+        <input type="text"><br><br>
+        Gender:
+       <input type="radio" name="male">Male
+      <input type="radio" name="female">Female<br><br>
+      Email: <input type="email"><br><br>
+      <textarea name="" id="" cols="30" rows="10" placeholder="TERMS AND CONDITIONS..."></textarea><br><br>
+      <button>send form</button>
+      <button>Clear form</button>
+    </fieldset>
+</form>
+</body>
+</html>

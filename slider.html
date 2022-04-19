@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            body{
+                background: #7fff8a;
+            }
+            h1{
+                font-family:Lucida Sans;
+                letter-spacing: normal;
+                font-size: large;
+                text-align: center;
+                margin-top: 15px;
+                color: white;
+            }
+           
+            #digit {
+            font-size: 175px;
+            width: 900px;
+            margin: 200px;
+            text-align: center;
+            border: 2px solid rgb(2, 72, 8);
+            border-radius: 20px;
+            color: green;
+        }
+            .maindiv{
+                width: 690px;
+                background-image: url(gdv.jpg);
+                height: 500px;
+                position: absolute;
+                box-shadow: 1px 2px 5px 5px rgb(6, 85, 23);
+                animation: slider 9s infinite linear;
+                left: 50%;
+                background-size: 100% 100%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            @keyframes slider{
+                0%{
+                    background-image: url(mango\ cakes.jpg);
+                }
+                35%{
+                    background-image:url(download\ \(1\)\ -\ Copy.jpg);
+                }
+                75%{
+                    background-image: url(images.jpg);
+                }
+                95%{
+                    background-image: url(images\ \(21\).jpg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>images Slider Animation And Digital Clock</h1>
+        <div class="maindiv">
+
+        </div>
+ <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ 
+ 
+    <div id="digit">8:10 </div>
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+  
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+  
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+  
+            let currentTime = hour + ":" 
+                + min + ":" + sec + am_pm;
+  
+            document.getElementById("digit")
+                .innerHTML = currentTime;
+        }
+  
+        showTime();
+    </script>
+</body>
+  
+</html>
